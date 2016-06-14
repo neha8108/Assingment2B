@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Juke Box</title>
+<link rel ="stylesheet" type= "text/css" href="stylesheet.css">
+
+<body>
+<div id="form">
+<h3>Choose if you to listen something different</h3>
+<input type="text" id="SongName">
+<input type="submit"Onclick="SimpleTrack()">
+</form>
+
+
+<div id="container">
+<div id="audio-img">
+<img class="cover">
+</div>
+<div id="audio-player">
+<div id="audio-info">
+<span class="artist"></span> - <span class="title"></span>
+</div>
+<input id="volume" type="range" min ="0" max="10" value="5">
+<br>
+<div id = "audio-buttons">
+<button id="prev"></button>
+<button id="play"></button>
+<button id="pause"></button>
+<button id="stop"></button>
+<button id="next"></button>
+</div>
+<div class="clearfix"></div>
+<div id="tracker">
+   <div id="progressbar">
+   <span id="progress"></span>
+   </div>
+   <span id="duration"></span>
+   </div>
+   <div class="clearfix"></div>
+   <ul id = "playlist">
+   <li song="Devvon Terell and Futuristic-Sorry(Remix)" artist="Devvon Terell"> Sorry(Remix).mp3</li>
+   <li song="justin bieber-sorry.mp3" artist="justin bieber"> sorry.mp3</li>
+   <li song="Lil Herb-Mamma Im Sorry.mp3" artist="Lil Herb-Mamma"> Mamma Im Sorry.mp3</li>
+   </ul>
+   </div>
+   
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"> </script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
